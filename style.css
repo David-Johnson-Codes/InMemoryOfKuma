@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    color: #45455E;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 30rem;
+}
+
+h1 {
+    text-align: center;
+    display: inline-block;
+    padding: 2rem;
+    color: #45455E;
+    font-size: 2rem;
+    font-family: 'La Belle Aurore',
+        cursive;
+
+}
+
+.kuma {
+    font-size: 4rem;
+}
+
+/* main*/
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.photoContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.left {
+    min-width: 0;
+    border: 2px solid white;
+}
+
+.middle {
+    min-width: 0;
+    border: 2px solid white;
+}
+
+.right {
+    min-width: 0;
+    border: 2px solid white;
+}
+
+/* Allows image to shrink with flexbox*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Section */
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+h2 {
+    font-family: 'La Belle Aurore',
+        cursive;
+}
+
+.kumaStory {
+    padding-top: 3rem;
+    border-bottom: .10rem solid #45455E;
+}
+
+.aboutKuma {
+    display: inline-block;
+    text-align: left;
+    width: 75%;
+    padding: 0 2rem;
+    border-left: 2px solid #45455E;
+    border-right: 2px solid #45455E;
+
+}
+
+.aboutKumaTop {
+    margin-top: 3rem;
+}
+
+/*   Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: end;
+    height: 10rem;
+}
+
+.ferretIcon {
+    width: 5%;
+    height: auto;
+}
+
+.info {
+    font-size: 1rem;
+}
+
+/* Screens smaller than 767px*/
+
+@media (max-width: 767px) {
+
+    .left,
+    .middle,
+    .rightTop {
+        display: none;
+    }
+}
