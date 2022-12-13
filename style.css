@@ -26,6 +26,7 @@ header {
 h1 {
     text-align: center;
     display: inline-block;
+    white-space: pre-line;
     padding: 2rem;
     color: #45455E;
     font-size: 2rem;
@@ -42,27 +43,30 @@ h1 {
 .mainContainer {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    width: 75%;
 }
 
 .photoContainer {
     display: flex;
     justify-content: center;
     gap: 2px;
+
 }
 
 .left {
     min-width: 0;
-    border: 2px solid white;
+    margin: 2px;
 }
 
 .middle {
     min-width: 0;
-    border: 2px solid white;
+    margin: 2px;
 }
 
 .right {
     min-width: 0;
-    border: 2px solid white;
+    margin: 2px;
 }
 
 /* Allows image to shrink with flexbox*/
@@ -74,18 +78,13 @@ img {
 /* Section */
 
 section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
-    align-items: center;
-
-
 }
 
 h2 {
     font-family: 'La Belle Aurore',
         cursive;
+    display: inline-block;
 }
 
 .kumaStory {
@@ -96,11 +95,10 @@ h2 {
 .aboutKuma {
     display: inline-block;
     text-align: left;
-    width: 75%;
     padding: 0 2rem;
     border-left: 2px solid #45455E;
     border-right: 2px solid #45455E;
-
+    width: 100%;
 }
 
 .aboutKumaTop {
